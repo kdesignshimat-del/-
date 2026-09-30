@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>المنصة الافتراضية - مدارس كامبريدج سيتي الدولية</title>
+  <meta name="description" content="منصة تعليمية رقمية متكاملة لمدارس كامبريدج سيتي الدولية لدعم التعلم الهجين والتعليم عن بُعد.">
+  <meta property="og:title" content="المنصة الافتراضية - مدارس كامبريدج سيتي الدولية">
+  <meta property="og:description" content="منصة تعليمية رقمية متكاملة لمدارس كامبريدج سيتي الدولية لدعم التعلم الهجين والتعليم عن بُعد.">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="ar_AR">
+
+  <style>
+    * { box-sizing: border-box; }
+    html, body { margin: 0; padding: 0; }
+    body {
+      min-height: 100vh;
+      background: #f8fafc;
+      color: #1e293b;
+      font-family: Tahoma, Arial, "Noto Sans Arabic", sans-serif;
+      line-height: 1.7;
+    }
+    .page { min-height: 100vh; display: flex; flex-direction: column; }
+    header {
+      background: #1e3a8a;
+      color: #fff;
+      padding: 16px 20px;
+      box-shadow: 0 2px 8px rgba(0,0,0,.12);
+    }
+    .header-inner, main {
+      width: min(1100px, calc(100% - 32px));
+      margin: 0 auto;
+    }
+    .header-inner {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 16px;
+    }
+    h1 { margin: 0; font-size: clamp(18px, 3vw, 24px); }
+    .badge {
+      background: #1d4ed8;
+      padding: 5px 12px;
+      border-radius: 999px;
+      font-size: 12px;
+      white-space: nowrap;
+    }
+    main { flex: 1; padding: 32px 0; }
+    .hero, .card {
+      background: #fff;
+      border: 1px solid #e2e8f0;
+      border-radius: 16px;
+      box-shadow: 0 2px 10px rgba(15,23,42,.05);
+    }
+    .hero { padding: 28px; margin-bottom: 24px; }
+    .hero h2 {
+      margin: 0 0 8px;
+      color: #1e3a8a;
+      font-size: clamp(23px, 4vw, 32px);
+    }
+    .hero p { margin: 0; color: #475569; }
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 24px;
+    }
+    .card { padding: 24px; }
+    .card h3 {
+      margin: 0 0 14px;
+      padding-bottom: 10px;
+      border-bottom: 1px solid #e2e8f0;
+      font-size: 19px;
+    }
+    .card p { margin: 0; font-weight: 600; }
+    .name { color: #2563eb; font-weight: 800; }
+    footer {
+      background: #1e293b;
+      color: #cbd5e1;
+      text-align: center;
+      padding: 16px;
+      font-size: 14px;
+    }
+    @media (max-width: 700px) {
+      .header-inner { flex-direction: column; align-items: flex-start; }
+      .cards { grid-template-columns: 1fr; }
+      main { padding: 20px 0; }
+      .hero, .card { padding: 20px; }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="page">
+    <header>
+      <div class="header-inner">
+        <h1>مدارس كامبريدج سيتي الدولية</h1>
+        <span class="badge">المنصة الافتراضية</span>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <h2>مرحباً بك في المنصة التعليمية</h2>
+        <p>بوابة التعلم الهجين والتعليم عن بُعد للعام الدراسي الجديد.</p>
+      </section>
+
+      <section class="cards">
+        <article class="card">
+          <h3>فريق الإشراف الأكاديمي</h3>
+          <p>المشرف المسؤول: <span class="name">كمارا</span></p>
+        </article>
+
+        <article class="card">
+          <h3>الشؤون التنظيمية والطلابية</h3>
+          <p>مسؤول الوسم والشارات: <span class="name">عزوز جنترة</span></p>
+        </article>
+      </section>
+    </main>
+
+    <footer>
+      <p>جميع الحقوق محفوظة لمدارس كامبريدج سيتي الدولية © 2026</p>
+    </footer>
+  </div>
+</body>
+</html>
