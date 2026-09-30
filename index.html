@@ -3,53 +3,93 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>المنصة الافتراضية - مدارس كامبريدج سيتي الدولية</title>
-    <!-- Tailwind CSS CDN -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&display=swap" rel="stylesheet">
+    <title>مدارس كامبريدج سيتي الدولية | Cambridge City International Schools</title>
     <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+        }
         body {
-            font-family: 'Cairo', sans-serif;
-            background-color: #050D1F;
+            background-color: #0f172a;
+            color: #f8fafc;
+            line-height: 1.6;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+        .container {
+            width: 100%;
+            max-width: 650px;
+            background: #1e293b;
+            padding: 35px;
+            border-radius: 16px;
+            box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.3);
+            border: 1px solid #334155;
+        }
+        header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        header h1 {
+            font-size: 22px;
             color: #ffffff;
+            margin-bottom: 8px;
+            font-weight: 700;
+        }
+        header p {
+            color: #94a3b8;
+            font-size: 14px;
+        }
+        .card {
+            background: #0f172a;
+            padding: 20px;
+            border-radius: 12px;
+            margin-bottom: 16px;
+            border-right: 4px solid #3b82f6;
+        }
+        .card h3 {
+            font-size: 16px;
+            margin-bottom: 8px;
+            color: #60a5fa;
+        }
+        .card p {
+            color: #cbd5e1;
+            font-size: 14px;
+        }
+        footer {
+            text-align: center;
+            margin-top: 25px;
+            color: #64748b;
+            font-size: 12px;
         }
     </style>
 </head>
-<body class="min-h-screen flex flex-col justify-between p-4 md:p-8">
+<body>
 
-    <!-- Header -->
-    <header class="text-center py-6 border-b border-[#00D9FF]/30">
-        <h1 class="text-2xl md:text-3xl font-bold text-[#00D9FF] tracking-wide">مدارس كامبريدج سيتي الدولية</h1>
-        <p class="text-sm text-[#2CEAA3] mt-2">المنصة الافتراضية للتعليم الإلكتروني</p>
-    </header>
+    <div class="container">
+        <header>
+            <h1>مدارس كامبريدج سيتي الدولية</h1>
+            <p>Cambridge City International Schools</p>
+        </header>
 
-    <!-- Main Content -->
-    <main class="max-w-2xl mx-auto w-full my-8 space-y-6">
-        <!-- Welcome Card -->
-        <div class="bg-[#0b162c] border border-[#00D9FF]/40 rounded-2xl p-6 shadow-xl shadow-[#00D9FF]/10 text-center">
-            <h2 class="text-xl font-bold text-[#2CEAA3] mb-3">مرحباً بكم في العام الدراسي الجديد</h2>
-            <p class="text-gray-300 text-sm leading-relaxed">
-                نعمل جاهدين لتقديم أفضل تجربة تعليمية رقمية لطلابنا الأعزاء وبناء مستقبل مشرق.
-            </p>
+        <div class="card">
+            <h3>البوابة التعليمية الرسمية</h3>
+            <p>مرحباً بكم في الموقع الرسمي للمدرسة. نعمل على توفير بيئة تعليمية متطورة ومتميزة لطلابنا.</p>
         </div>
 
-        <!-- Supervisors Cards -->
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-            <div class="bg-[#0b162c] border border-[#2CEAA3]/40 rounded-xl p-4 text-center shadow-md">
-                <h3 class="font-bold text-[#00D9FF] text-sm">إشراف القسم</h3>
-                <p class="text-gray-200 mt-1 font-semibold">كمارا</p>
-            </div>
-            <div class="bg-[#0b162c] border border-[#2CEAA3]/40 rounded-xl p-4 text-center shadow-md">
-                <h3 class="font-bold text-[#00D9FF] text-sm">التنسيق والمتابعة</h3>
-                <p class="text-gray-200 mt-1 font-semibold">عزوز جنترة</p>
-            </div>
+        <div class="card">
+            <h3>التسجيل والقبول</h3>
+            <p>تواصل معنا لمعرفة تفاصيل التسجيل والبرامج الدراسية المتاحة للعام الحالي.</p>
         </div>
-    </main>
 
-    <!-- Footer -->
-    <footer class="text-center py-4 text-xs text-gray-500 border-t border-gray-800">
-        جميع الحقوق محفوظة © مدارس كامبريدج سيتي الدولية 2026
-    </footer>
+        <footer>
+            جميع الحقوق محفوظة &copy; 2026
+        </footer>
+    </div>
 
 </body>
 </html>
