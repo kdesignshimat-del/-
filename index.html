@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>منصة المدرسة الإلكترونية التعليمية السودانية - مدارس كامبردج سيتي العالمية</title>
+<link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;700;900&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:'Tajawal',sans-serif}
+body{background:#0a0f1f;color:#fff;min-height:100vh}
+header{background:#0f172a;padding:20px;border-bottom:2px solid #1e40af;text-align:center}
+header h1{color:#fff;font-size:28px;font-weight:900}
+header p{color:#60a5fa;margin-top:5px}
+nav{display:flex;gap:10px;justify-content:center;padding:15px;background:#111827;flex-wrap:wrap}
+nav button{background:#1e293b;color:#cbd5e1;border:1px solid #334155;padding:10px 20px;border-radius:12px;cursor:pointer;font-weight:700}
+nav button.active{background:#2563eb;color:#fff;border-color:#3b82f6}
+.container{max-width:1000px;margin:20px auto;padding:0 15px}
+.card{background:#111827;border:1px solid #1e293b;border-right:4px solid #3b82f6;border-radius:16px;padding:20px;margin-bottom:15px}
+.card h3{color:#fff;font-size:20px;margin-bottom:10px}
+.card p{color:#94a3b8;line-height:1.6}
+.btn{background:#2563eb;color:#fff;border:none;padding:12px 24px;border-radius:12px;font-weight:800;cursor:pointer;width:100%;margin-top:10px;font-size:16px}
+.btn-green{background:#16a34a}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:15px}
+.stat{text-align:center;padding:15px;background:#1e293b;border-radius:12px}
+.stat b{font-size:28px;color:#60a5fa;display:block}
+input,select,textarea{width:100%;padding:12px;margin:8px 0;background:#0f172a;border:1px solid #334155;border-radius:10px;color:#fff}
+.teacher{background:#1e293b;padding:15px;border-radius:14px;text-align:center;border:1px solid #334155}
+.teacher .av{width:60px;height:60px;background:#2563eb;border-radius:50%;display:flex;align-items:center;justify-content:center;margin:0 auto 10px;font-weight:900;font-size:24px}
+.badge{display:inline-block;padding:4px 10px;background:#1e40af;border-radius:20px;font-size:12px;margin:2px}
+.hidden{display:none}
+</style>
+</head>
+<body>
+<header>
+<h1>منصة المدرسة الإلكترونية التعليمية السودانية</h1>
+<p>مدارس كامبريدج سيتي العالمية - الفيحاء</p>
+</header>
+<nav>
+<button class="active" onclick="show('home')">الرئيسية</button>
+<button onclick="show('school')">واجهة المدرسة</button>
+<button onclick="show('director')">مكتب المدير</button>
+<button onclick="show('register')">التسجيل والقبول</button>
+<button onclick="show('teachers')">هيئة التدريس</button>
+</nav>
+<div class="container">
+<!-- HOME -->
+<div id="home">
+<div class="grid">
+<div class="card" onclick="show('school')" style="cursor:pointer">
+<h3>🏫 البوابة التعليمية الرسمية</h3>
+<p>دخول الطلاب والمعلمين - الجداول، الواجبات، النتائج</p>
+<button class="btn">دخول البوابة</button>
+</div>
+<div class="card" onclick="show('register')" style="cursor:pointer;border-right-color:#16a34a">
+<h3>📝 التسجيل والقبول</h3>
+<p>سجل الآن - التحويل يذهب مباشرة لواتساب الإدارة (مها أبو الوليد - الفيحاء / آية عتاب)</p>
+<button class="btn btn-green">سجل الآن</button>
+</div>
+</div>
+<div class="card">
+<h3>مرحبا بكم في مدارس كامبريدج سيتي</h3>
+<p>منصة تعليمية متكاملة تخدم طلاب الفيحاء والمناطق المجاورة. نظام إدارة حديث يربط الإدارة والمعلمين وأولياء الأمور مباشرة عبر واتساب.</p>
+<div class="grid" style="margin-top:15px">
+<div class="stat"><b>350+</b> طالب وطالبة</div>
+<div class="stat"><b>25</b> معلم متخصص</div>
+<div class="stat"><b>12</b> فصل دراسي</div>
+</div>
+</div>
+</div>
+<!-- SCHOOL -->
+<div id="school" class="hidden">
+<div class="card"><h3>واجهة المدرسة - الفيحاء</h3><p>مبنى حديث مجهز بأحدث الوسائل التعليمية: معامل علوم، مكتبة رقمية، فصول مكيفة، ملاعب، كاميرات مراقبة.</p></div>
+<div class="grid">
+<div class="card"><h3>📚 المكتبة</h3><p>مكتبة ورقية ورقمية بأكثر من 2000 كتاب</p></div>
+<div class="card"><h3>🔬 المعامل</h3><p>معامل علوم وحاسوب مجهزة</p></div>
+<div class="card"><h3>⚽ الملاعب</h3><p>ملاعب كرة قدم وسلة</p></div>
+</div>
+</div>
+<!-- DIRECTOR -->
+<div id="director" class="hidden">
+<div class="card"><h3>مكتب المدير</h3><p><b>المديرة التنفيذية:</b> مها أبو الوليد - فرع الفيحاء<br><b>نائبة المدير:</b> آية عتاب - التسجيل والقبول</p></div>
+<div class="card"><h3>الطلبات الجديدة (<span id="count">0</span>)</h3><div id="reqList"><p style="color:#64748b">لا يوجد طلبات بعد - الطلبات الجديدة من التسجيل ستظهر هنا</p></div></div>
+</div>
+<!-- REGISTER -->
+<div id="register" class="hidden">
+<div class="card">
+<h3>استمارة التسجيل والقبول - التحويل لواتساب الإدارة</h3>
+<input id="sName" placeholder="اسم الطالب الكامل">
+<input id="sAge" type="number" placeholder="عمر الطالب">
+<select id="sClass"><option>اختر الصف</option><option>روضة</option><option>أول ابتدائي</option><option>ثاني</option><option>ثالث</option><option>رابع</option><option>خامس</option><option>سادس</option><option>متوسط</option></select>
+<input id="pName" placeholder="اسم ولي الأمر">
+<input id="pPhone" placeholder="رقم واتساب ولي الأمر">
+<select id="area"><option value="الفيحاء">السكن - الفيحاء (يذهب لمها أبو الوليد)</option><option value="غير الفيحاء">السكن - خارج الفيحاء (يذهب لآية عتاب)</option></select>
+<textarea id="notes" placeholder="ملاحظات إضافية"></textarea>
+<button class="btn btn-green" onclick="sendWA()">إرسال لواتساب الإدارة 📱</button>
+<p style="font-size:12px;color:#94a3b8;margin-top:10px">* عند الضغط سيفتح واتساب مباشرة برسالة جاهزة للإدارة</p>
+</div>
+</div>
+<!-- TEACHERS -->
+<div id="teachers" class="hidden">
+<div class="grid">
+<div class="teacher"><div class="av">م</div><h4>أ. محمد أحمد</h4><p>رياضيات - 10 سنوات خبرة</p><span class="badge">ابتدائي</span><span class="badge">متوسط</span></div>
+<div class="teacher"><div class="av">س</div><h4>أ. سارة علي</h4><p>علوم - ماجستير</p><span class="badge">علوم</span></div>
+<div class="teacher"><div class="av">أ</div><h4>أ. أحمد محمود</h4><p>لغة عربية - خبير مناهج</p><span class="badge">عربي</span></div>
+<div class="teacher"><div class="av">ف</div><h4>أ. فاطمة حسن</h4><p>لغة إنجليزية - IELTS 8</p><span class="badge">English</span></div>
+<div class="teacher"><div class="av">خ</div><h4>أ. خالد عمر</h4><p>حاسوب وتقنية</p><span class="badge">حاسوب</span></div>
+<div class="teacher"><div class="av">ن</div><h4>أ. نورة إبراهيم</h4><p>تربية إسلامية وقرآن</p><span class="badge">إسلامية</span></div>
+</div>
+</div>
+</div>
+<footer style="text-align:center;padding:30px;color:#475569;border-top:1px solid #1e293b;margin-top:30px">جميع الحقوق محفوظة © 2026 - مدارس كامبريدج سيتي العالمية - الفيحاء<br>الإدارة: مها أبو الوليد | التسجيل: آية عتاب</footer>
+<script>
+function show(id){
+document.querySelectorAll('.container > div').forEach(d=>d.classList.add('hidden'));
+document.getElementById(id).classList.remove('hidden');
+document.querySelectorAll('nav button').forEach(b=>b.classList.remove('active'));
+event.target.classList.add('active');
+window.scrollTo(0,0);
+}
+let reqs=JSON.parse(localStorage.getItem('regs')||'[]');
+document.getElementById('count').innerText=reqs.length;
+if(reqs.length>0){
+document.getElementById('reqList').innerHTML=reqs.map(r=>`<div style="background:#1e293b;padding:10px;border-radius:10px;margin:5px 0"><b>${r.sName}</b> - ${r.sClass} - ${r.area}<br><small>${r.pName} - ${r.pPhone}</small></div>`).join('');
+}
+function sendWA(){
+let sName=document.getElementById('sName').value;
+let sClass=document.getElementById('sClass').value;
+let pName=document.getElementById('pName').value;
+let pPhone=document.getElementById('pPhone').value;
+let area=document.getElementById('area').value;
+let notes=document.getElementById('notes').value;
+if(!sName||!pName){alert('أكمل اسم الطالب وولي الأمر');return;}
+let isFayha=area.includes('الفيحاء');
+let adminName=isFayha?'مها أبو الوليد - الفيحاء':'آية عتاب';
+let adminPhone=isFayha?'249912345678':'249987654321'; // عدل الأرقام هنا
+let msg=`السلام عليكم ${adminName}%0Aطلب تسجيل جديد في مدارس كامبريدج سيتي:%0A%0Aاسم الطالب: ${sName}%0Aالصف: ${sClass}%0Aولي الأمر: ${pName}%0Aرقم ولي الأمر: ${pPhone}%0Aالسكن: ${area}%0Aملاحظات: ${notes}%0A%0Aمن منصة المدرسة الإلكترونية`;
+let obj={sName,sClass,pName,pPhone,area,date:new Date().toLocaleString()};
+reqs.push(obj);localStorage.setItem('regs',JSON.stringify(reqs));
+window.open(`https://wa.me/${adminPhone}?text=${msg}`,'_blank');
+alert(`تم تحويلك لواتساب ${adminName}`);
+}
+</script>
+</body>
+</html>
